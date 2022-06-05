@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -99999px;
+  opacity: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.container .login {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .login .inner {
+  width: 600px;
+  margin: 0 80px;
+}
+.container .login .inner h2 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.container .login .inner p:nth-of-type(1) {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.container .login .inner form {
+  width: 100%;
+}
+.container .login .inner form fieldset {
+  border: none;
+}
+.container .login .inner form fieldset .input-group {
+  width: 100%;
+}
+.container .login .inner form fieldset .input-group table {
+  width: 100%;
+}
+.container .login .inner form fieldset .input-group table tr {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+}
+.container .login .inner form fieldset .input-group table tr th {
+  display: inline-block;
+  width: 100px;
+}
+.container .login .inner form fieldset .input-group table tr th label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.container .login .inner form fieldset .input-group table tr td input[type=email],
+.container .login .inner form fieldset .input-group table tr td input[type=password] {
+  width: 500px;
+  height: 40px;
+  border: 1px solid rgb(166, 165, 165);
+  border-radius: 8px;
+  padding: 10px;
+}
+.container .login .inner form fieldset .input-group table tr td input[type=checkbox] {
+  margin-right: 6px;
+  margin-bottom: 20px;
+}
+.container .login .inner form fieldset .input-group table tr td a {
+  color: #0066ff;
+  position: absolute;
+  right: 100px;
+}
+.container .login .inner form fieldset button[type=submit] {
+  display: block;
+  width: 500px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #0066ff;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.container .login .inner form fieldset .googleBtn {
+  display: block;
+  width: 500px;
+  height: 40px;
+  border: 1px solid rgb(166, 165, 165);
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.container .login .inner p {
+  text-align: left;
+}
+.container .login .inner p a {
+  color: #0066ff;
+}
+.container .deco {
+  width: 50%;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .deco .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #0066ff;
+}
+.container .deco .blur {
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+/*# sourceMappingURL=style.css.map */
