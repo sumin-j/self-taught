@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tai Heritage Pro", serif;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+figure .intro {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+figure nav {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+figure nav ul {
+  display: flex;
+}
+figure nav ul li {
+  margin-right: 16px;
+  color: #fff;
+}
+figure h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+figure .util {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  display: flex;
+  color: #fff;
+}
+figure .util a {
+  display: block;
+  margin-right: 20px;
+}
+figure .util i {
+  display: block;
+  position: relative;
+  top: 5px;
+  font-size: 20px;
+}
+figure .sub {
+  width: 580px;
+  height: 730px;
+  position: absolute;
+  top: 170px;
+  left: 180px;
+  z-index: 3;
+}
+figure h2 {
+  position: absolute;
+  width: 600px;
+  line-height: 1.2;
+  top: 460px;
+  left: 870px;
+  color: #fff;
+  font-size: 48px;
+}
+figure .shopBtn {
+  display: block;
+  position: absolute;
+  width: 100px;
+  top: 650px;
+  left: 870px;
+  padding: 8px 14px;
+  background: beige;
+  transition: opacity 0.3s;
+}
+figure .shopBtn:hover {
+  opacity: 0.5;
+}
+
+.banner {
+  width: 100%;
+  padding: 120px;
+  background: #efefef;
+}
+.banner .inner {
+  width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .inner p {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.items {
+  width: 100%;
+  padding: 80px;
+  overflow: hidden;
+}
+.items .inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.items .inner .pic {
+  width: 580px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.items .inner .pic :nth-of-type(2) {
+  margin-right: 0;
+}
+.items .inner .pic:hover .item2 {
+  opacity: 1;
+}
+.items .inner .pic .item1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.items .inner .pic .item2 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+  transition: 0.7s;
+}
+.items .inner .desc {
+  position: relative;
+  top: 620px;
+  left: -460px;
+}
+.items .inner .desc a {
+  display: block;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.subscribe {
+  width: 100%;
+  padding: 60px;
+}
+.subscribe .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.subscribe .inner h4 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+.subscribe .inner p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.subscribe .inner input[type=email] {
+  margin-left: 420px;
+  margin-right: 12px;
+  border: 1px solid #efefef;
+  width: 200px;
+  height: 60px;
+  padding-left: 20px;
+}
+.subscribe .inner button[type=submit] {
+  background: #000;
+  border: none;
+  color: #fff;
+  width: 100px;
+  height: 55px;
+}
+.subscribe .inner span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 100px;
+  background: #efefef;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner .menu ul li {
+  text-decoration: underline;
+}
+footer .inner h1 {
+  text-align: center;
+}
+footer .inner .contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .inner .contact a {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

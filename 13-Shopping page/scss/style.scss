@@ -1,0 +1,237 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+figure {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .intro {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    nav {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        ul {
+            display: flex;
+            li {
+                margin-right: 16px;
+                color: #fff;
+            }
+        }
+    }
+    h1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+    }
+    .util {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        display: flex;
+        color: #fff;
+        a {
+            display: block;
+            margin-right: 20px;
+        }
+        i {
+            display: block;
+            position: relative;
+            top: 5px;
+            font-size: 20px;
+        }
+    }
+    .sub {
+        width: 580px;
+        height: 730px;
+        position: absolute;
+        top: 170px;
+        left: 180px;
+        z-index: 3;
+    }
+    h2 {
+        position: absolute;
+        width: 600px;
+        line-height: 1.2;
+        top: 460px;
+        left: 870px;
+        color: #fff;
+        font-size: 48px;
+    }
+    .shopBtn {
+        display: block;
+        position: absolute;
+        width: 100px;
+        top: 650px;
+        left: 870px;
+        padding: 8px 14px;
+        background: beige;
+        transition: opacity 0.3s;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    padding: 120px;
+    background: #efefef;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        text-align: center;
+        p {
+            width: 600px;
+            margin: 0 auto;
+            font-size: 24px;
+        }
+    }
+}
+
+.items {
+    width: 100%;
+    padding: 80px;
+    overflow: hidden;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        .pic {
+            width: 580px;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            margin-right: 20px;
+            :nth-of-type(2) {
+                margin-right: 0;
+            }
+            &:hover {
+                .item2 {
+                    opacity: 1;
+                }
+            }
+            .item1 {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+               
+            }
+            .item2 {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;            transition: 1s;
+                transition: 0.7s;
+
+            }
+        }
+        .desc {
+            position: relative;
+            top: 620px;
+            left: -460px;
+            a {
+                display: block;
+                font-size: 28px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.subscribe {
+    width: 100%;
+    padding: 60px;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        h4 {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type='email'] {
+            margin-left: 420px;
+            margin-right: 12px;
+            border: 1px solid #efefef;
+            width: 200px;
+            height: 60px;
+            padding-left: 20px;
+        }
+        button[type='submit'] {
+            background: #000;
+            border: none;
+            color: #fff;
+            width: 100px;
+            height: 55px;
+        }
+        span {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 100px;
+    background: #efefef;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .menu {
+            ul {
+                li {
+                    text-decoration: underline;
+                }
+            }
+        }
+        h1 {
+            text-align: center;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
