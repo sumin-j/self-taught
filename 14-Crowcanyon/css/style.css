@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lato", "Noto Sans KR", sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+header .inner {
+  display: flex;
+  width: 1180px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+header .inner h1 a img {
+  width: 80px;
+  height: 80px;
+}
+header .inner .gnb {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 140px;
+}
+header .inner .gnb .mainMenu {
+  display: flex;
+}
+header .inner .gnb .mainMenu li {
+  margin-right: 40px;
+}
+header .inner .gnb .mainMenu li a {
+  display: block;
+  padding: 4px;
+  margin-bottom: 8px;
+}
+header .inner .gnb .mainMenu .subMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+  transition: 0.5s;
+}
+header .inner .gnb .mainMenu .subMenu li a {
+  display: block;
+  padding: 4px;
+}
+header .inner .util {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+header .inner .util ul {
+  display: flex;
+}
+header .inner .util ul li {
+  margin-right: 10px;
+}
+header .inner .util ul li a {
+  padding: 4px;
+}
+header .inner .util ul li a i {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

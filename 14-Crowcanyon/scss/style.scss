@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato','Noto Sans KR', sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hidden {
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    .inner {
+        display: flex;
+        width: 1180px;
+        padding: 20px;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            a {
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        .gnb {
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            left: 140px;
+
+            .mainMenu {
+                display: flex;
+
+                li {
+                    margin-right: 40px;
+                    
+                    a {
+                        display: block;
+                        padding: 4px;
+                        margin-bottom: 8px;
+                    }
+                }
+                .subMenu {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    padding: 0;
+                    transition: 0.5s;
+
+                    li {
+                       a {
+                           display: block;
+                           padding: 4px;
+
+                       } 
+                    }
+                }
+            }
+        }
+        .util {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 10px;
+                    a {
+                        padding: 4px;
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
