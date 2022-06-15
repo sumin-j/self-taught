@@ -33,9 +33,15 @@ header .inner {
   margin: 0 auto;
   position: relative;
 }
+header .inner h1 {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+}
 header .inner h1 a img {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
 }
 header .inner .gnb {
   width: 100%;
@@ -81,6 +87,20 @@ header .inner .util ul li a {
 }
 header .inner .util ul li a i {
   font-size: 18px;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+figure .inner {
+  width: 100%;
+}
+figure .inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
